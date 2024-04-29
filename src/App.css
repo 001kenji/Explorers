@@ -1,0 +1,68 @@
+
+
+@font-face {
+  font-family: BigTxt;
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: H1Txt;
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: SmTxt;
+  src: url('./assets/fonts/Poppins-Light.ttf');
+  
+}
+
+#Master-Home {
+  background-image: url('./assets/images/home1.jpeg');
+  background-position:top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  animation-name: rotateHome;
+  animation-duration: 8s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+#SmTxt {
+  
+  font-family: SmTxt;
+} 
+
+big {
+
+  font-family: BigTxt;
+}
+h1 {
+  font-family: H1Txt;
+}
+#rotateClient {
+  animation-name: rotateClient;
+  animation-duration: 25s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  
+}
+#CoverImg {
+  background-image: url('./assets/images/cover.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+}
+@keyframes rotateClient {
+  0%{transform:translateX(0%);}
+  50%{transform:translateX(-312%);}
+  100%{transform:translateX(0%);}
+}
+
+@keyframes rotateHome {
+  0%{background-image: url('./assets/images/home1.jpeg');}
+  50%{background-image: url('./assets/images/home2.jpeg');}
+  100%{background-image: url('./assets/images/home1.jpeg');}
+}
